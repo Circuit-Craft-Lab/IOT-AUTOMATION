@@ -34,45 +34,45 @@ void loop() {
 
       case '1':
         digitalWrite(RELAY1, LOW);
-        Serial.println("Relay 1 ON");
+        Serial.println("FAN ON");
         break;
 
       case '2':
         digitalWrite(RELAY1, HIGH);
-        Serial.println("Relay 1 OFF");
+        Serial.println("FAN OFF");
         break;
 
       case '3':
         digitalWrite(RELAY2, LOW);
-        Serial.println("Relay 2 ON");
+        Serial.println("LIGHT ON");
         break;
 
       case '4':
         digitalWrite(RELAY2, HIGH);
-        Serial.println("Relay 2 OFF");
+        Serial.println("LIGHT OFF");
         break;
       case '5':
         digitalWrite(RELAY3, LOW);
-        Serial.println("Relay 2 ON");
+        Serial.println("SOCKET ON");
         break;
 
       case '6':
         digitalWrite(RELAY3, HIGH);
-        Serial.println("Relay 2 OFF");
+        Serial.println("SOCKET OFF");
         break;
 
       case 'A':
         digitalWrite(RELAY1, LOW);
         digitalWrite(RELAY2, LOW);
         digitalWrite(RELAY3, LOW);
-        Serial.println("Both Relays ON");
+        Serial.println("ALL DEVICES ON");
         break;
 
       case 'B':
         digitalWrite(RELAY1, HIGH);
         digitalWrite(RELAY2, HIGH);
         digitalWrite(RELAY3, HIGH);
-        Serial.println("Both Relays OFF");
+        Serial.println("ALL DEVICES OFF");
         break;
 
       default:
